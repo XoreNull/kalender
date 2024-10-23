@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="calendar-container">
+    <h2 id="currentMonth"></h2>
+    <div id="eventForm">
+      <input type="date" id="eventDate">
+      <input type="text" id="eventDescription" placeholder="Event description">
+      <button id="addEventBtn">Add Event</button>
+    </div>
+    <div id="jumpToDateForm">
+      <input type="date" id="jumpToDateInput">
+      <button id="jumpToDateBtn">Jump to Date</button>
+    </div>
+    <table id="calendar">
+      <thead>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+      </thead>
+      <tbody id="calendarBody">
+      </tbody>
+    </table>
+    <div id="eventListContainer">
+        <h3>Events for Selected Date:</h3>
+        <ul id="eventList"></ul>
+      </div>
+      
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
